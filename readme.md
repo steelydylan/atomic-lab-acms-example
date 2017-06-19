@@ -1,4 +1,4 @@
-# AtomicLab Examples
+# (Atomic Lab * a-blog cms) Examples
 
 a-blog cmsのSetTemplateを定義するのと一緒にStyleguideを生成すると便利かも
 
