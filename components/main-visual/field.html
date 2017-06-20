@@ -1,28 +1,28 @@
 <table class="acms-admin-table-admin-edit">
-	<tr>
-		<th>背景画像</th>
-		<td class="js-img_resize_cf">
-			<!-- BEGIN_IF [{main-visual__img@path}/nem] -->
-			<img src="%{ARCHIVES_DIR}{main-visual__img@path}" class="acms-admin-img-responsive js-img_resize_preview">
-			<input type="hidden" name="main-visual__img@old" value="{main-visual__img@path}" /><br />
-			<label class="acms-admin-form-checkbox">
+  <tr>
+    <th>背景画像</th>
+    <td class="js-img_resize_cf">
+      <!-- BEGIN_IF [{main-visual__img@path}/nem] -->
+      <img src="%{ARCHIVES_DIR}{main-visual__img@path}" class="acms-admin-img-responsive js-img_resize_preview">
+      <input type="hidden" name="main-visual__img@old" value="{main-visual__img@path}" /><br />
+      <label class="acms-admin-form-checkbox">
 				<input type="checkbox" name="main-visual__img@edit" value="delete" />
 				<i class="acms-admin-ico-checkbox"></i> 削除
 			</label>
-			<!-- ELSE -->
-			<img src="" class="acms-admin-img-responsive js-img_resize_preview" style="display:none;">
-			<!-- END_IF -->
-			<input type="file" name="main-visual__img" size="20" class="js-img_resize_input" /><br />
-			<input type="hidden" name="field[]" value="main-visual__img" />
-			<input type="hidden" name="main-visual__img:extension" value="image" />
-			<input type="hidden" name="main-visual__img@filename" value="" />
-		</td>
-	</tr>
-	<tr>
-		<th>タイトル</th>
-		<td>
-			<input type="text" name="main-visual__title" value="{main-visual__title}" class="acms-admin-form-width-full"/>
-			<input type="hidden" name="field[]" value="main-visual__title" />
-		</td>
-	</tr>
+      <!-- ELSE -->
+      <img src="" class="acms-admin-img-responsive js-img_resize_preview" style="display:none;">
+      <!-- END_IF -->
+      <input type="file" name="main-visual__img" size="20" class="js-img_resize_input" /><br />
+      <input type="hidden" name="field[]" value="main-visual__img" />
+      <input type="hidden" name="main-visual__img:extension" value="image" />
+      <input type="hidden" name="main-visual__img@filename" value="" />
+    </td>
+  </tr>
+  <tr>
+    <th>タイトル</th>
+    <td>
+      <input type="text" name="main-visual__title" value="{main-visual__title}" class="acms-admin-form-width-full" />
+      <input type="hidden" name="field[]" value="main-visual__title" />
+    </td>
+  </tr>
 </table>
