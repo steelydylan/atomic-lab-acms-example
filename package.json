@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "onchange \"components/\" -- npm run build",
     "sync": "browser-sync start --server './' --files './styleguide/components.json' --startPath ./styleguide/index.html",
-    "build": "atomic-lab build --markup html",
+    "build": "npm-run-all -p build:guide build:sass",
+    "build:guide": "atomic-lab build --markup html",
+    "build:sass": "node-sass ./components/index.scss ./dist/bundle.css --output-style expanded",
     "start": "npm-run-all -p watch sync"
   },
   "author": "steelydylan",
@@ -15,6 +17,7 @@
   "devDependencies": {
     "atomic-lab": "^1.3.0",
     "browser-sync": "^2.18.12",
+    "node-sass": "^4.5.3",
     "npm-run-all": "^4.0.2",
     "onchange": "^3.2.1"
   }

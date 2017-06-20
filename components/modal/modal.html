@@ -1,0 +1,32 @@
+<!--@doc
+# @category atom
+# @name modal
+# @css ./modal.scss
+# @desc media card
+-->
+
+<!-- BEGIN_SetTemplate id="modal" -->
+<div class="modal">
+    <div class="modal__background"></div>
+    <div class="modal__content">
+        <h1 class="modal__title">{{title}}</h1>
+        <p class="modal__copy">{{copy}}</p>
+
+        <div class="modal__action-buttons modal__action-buttons--stacked">
+            <button>Continue</button>
+            <button>Cancel</button>
+        </div>
+    </div>
+</div>
+<!-- END_SetTemplate -->
+
+<!--@preview
+<modal title="Material icons" subtitle="Material icons are easy to use in your web, Android, and iOS projects. " copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan, neque dapibus ultricies semper, neque odio lobortis nisl, id vulputate lacus risus non sem." />
+-->
+
+<!--@note
+## Example
+```html
+<modal title="Material icons" subtitle="Material icons are easy to use in your web, Android, and iOS projects. " copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan, neque dapibus ultricies semper, neque odio lobortis nisl, id vulputate lacus risus non sem." />
+```
+-->
