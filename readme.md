@@ -1,6 +1,8 @@
 # (Atomic Lab * a-blog cms) Examples
 
-a-blog cmsのSetTemplateを定義するのと一緒にStyleguideを生成すると便利かも
+a-blog cmsのSetTemplateを定義するのと同時にStyleguideを生成
+
+[コンポーネントベースのWebサイト制作](https://steelydylan.github.io/presen/ablogcms-camp-2017-spring-component.html)
 
 ## 使い方
 
